@@ -199,6 +199,12 @@ background: #0b7dda;
     font-size: 25px;
     background-color: #e0e899;
 }
+audio {
+	background-color: #e5df3d;
+	border-radius: 5px;
+	margin-bottom: 5px;
+	cursor: pointer;
+}
 .music{
 margin-left: 25px;
 text-align: center;
