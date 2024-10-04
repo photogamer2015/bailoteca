@@ -275,8 +275,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		<a class="enlace" href="aviso.html">Aviso de Cookies</a>
 	</div>
 	<div class="fondo-aviso-cookies" id="fondo-aviso-cookies"></div>
-
 	<script src="aviso.js"></script>
+
+	<script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const lazyImages = document.querySelectorAll('img[loading="lazy"]');
+            lazyImages.forEach(img => {
+                img.src = img.dataset.src;
+            });
+        });
+    </script>
 	
 	 <!-- Carga asíncrona de JavaScript para evitar bloqueo -->
     <script src="scripts.min.js" defer></script>
